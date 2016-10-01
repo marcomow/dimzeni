@@ -44,8 +44,9 @@
       <a href="#" data-activates="nav-mobile" class="button-collapse"><i class="material-icons brown-text">menu</i></a>
     </div>
   </nav>
-
-  <div class="parallax-container valign-wrapper" style="height:300px">
+  
+  <div class="row">
+  <div class="col"><div class="parallax-container valign-wrapper" style="height:300px">
     <div class="section no-pad-bot">
       <div class="container">
         <div class="row center">
@@ -75,9 +76,10 @@
 
 
 
-
-
-
+</div>
+  <div class="tabs-wrapper col">ATTACHMENTS</div>
+  
+</div>
  
   <footer class="page-footer brown">
     <div class="container">
@@ -115,7 +117,12 @@
   <script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
   <script src="js/materialize.js"></script>
   <script src="js/init.js"></script>
-
+  <script>
+    $(document).ready(function(){
+    $('.tabs-wrapper .row').pushpin({ top: $('.tabs-wrapper').offset().top });
+  });
+  
+  </script>
   </body>
 </html>
 
