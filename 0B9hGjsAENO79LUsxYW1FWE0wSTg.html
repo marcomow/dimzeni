@@ -44,8 +44,9 @@
       <a href="#" data-activates="nav-mobile" class="button-collapse"><i class="material-icons brown-text">menu</i></a>
     </div>
   </nav>
-
-  <div class="parallax-container valign-wrapper" style="height:300px">
+  
+  <div class="row">
+  <div class="col"><div class="parallax-container valign-wrapper" style="height:300px">
     <div class="section no-pad-bot">
       <div class="container">
         <div class="row center">
@@ -73,9 +74,10 @@
 
 
 
-
-
-
+</div>
+  <div class="tabs-wrapper col"><div class="row"><a href="https://drive.google.com/file/d/0B9hGjsAENO79TlloWUZrWUlpQW8/view?usp=drivesdk">2006novrel_laime.wma</a></div><div class="row"><a href="https://drive.google.com/file/d/0B9hGjsAENO79VF9wcU41TjVyTEE/view?usp=drivesdk">jaut. par gariigo draudziibu t.Antonio.WMA</a></div><div class="row"><a href="https://drive.google.com/file/d/0B9hGjsAENO79ZUlDUmtrLW5Gbk0/view?usp=drivesdk">jaut. par zelastiibu t.Antonio.WMA</a></div><div class="row"><a href="https://drive.google.com/file/d/0B9hGjsAENO79Z0ptbFJGVVZkczQ/view?usp=drivesdk">jaut par aicin t.Antonio.WMA</a></div><div class="row"><a href="https://drive.google.com/file/d/0B9hGjsAENO79d2tkb2I5eld2RWs/view?usp=drivesdk">t.Antonio par att kristiet.-islams.WMA</a></div><div class="row"><a href="https://drive.google.com/file/d/0B9hGjsAENO79aVg1NFR2RkxrbjQ/view?usp=drivesdk">jaut. par liidzatbild. t.Antonio.WMA</a></div><div class="row"><a href="https://drive.google.com/file/d/0B9hGjsAENO79dV82NGptZUhYaTQ/view?usp=drivesdk">tGino_Aglona2008.WMA</a></div><div class="row"><a href="https://drive.google.com/file/d/0B9hGjsAENO79TzByTVJUVXh5Skk/view?usp=drivesdk">T.Gino I.WMA</a></div><div class="row"><a href="https://drive.google.com/file/d/0B9hGjsAENO79SUY3cHpTQ1hNYVE/view?usp=drivesdk">T.Gino.WMA</a></div><div class="row"><a href="https://drive.google.com/file/d/0B9hGjsAENO79dlJsd1I1TkM0Nnc/view?usp=drivesdk">tGino_greksudz.WMA</a></div><div class="row"><a href="https://drive.google.com/file/d/0B9hGjsAENO79MHBPZ0hlN0J4NWs/view?usp=drivesdk">tGino_bagat.WMA</a></div><div class="row"><a href="https://drive.google.com/file/d/0B9hGjsAENO79UFZ4ZVZUMHhiY3c/view?usp=drivesdk">tuvas_att_SvG.WMA</a></div><div class="row"><a href="https://drive.google.com/file/d/0B9hGjsAENO79dVVDUldGUHVVN1k/view?usp=drivesdk">iev. lugs. Sv.G..WMA</a></div><div class="row"><a href="https://drive.google.com/file/d/0B9hGjsAENO79VEU1SElhLW9SYXc/view?usp=drivesdk">Amabilis.mp3</a></div><div class="row"><a href="https://drive.google.com/file/d/0B9hGjsAENO79TVkxaVRZMjc0cGc/view?usp=drivesdk">edit_stein.wma</a></div><div class="row"><a href="https://drive.google.com/file/d/0B9hGjsAENO79RmlGWlVZR1l5eDg/view?usp=drivesdk">Aija_Avotina_Karmela_skola_par_m.Marjamu26.09.2015(1).wma</a></div><div class="row"><a href="https://drive.google.com/file/d/0B9hGjsAENO79U3F1d2tVelJfczA/view?usp=drivesdk">MEC 31.01.2015 Kristiet. skola Es pal_½dz_ō_Īu Tev, mans Dievs, neizdzist man_ü dz_½v_ō.WMA</a></div><div class="row"><a href="https://drive.google.com/file/d/0B9hGjsAENO79QVlXdG5tYzE5QVk/view?usp=drivesdk">t.Antonio par briiviibu.WMA</a></div><div class="row"><a href="https://drive.google.com/file/d/0B9hGjsAENO79T21YLUp1WjcwbWM/view?usp=drivesdk">t.Antonio par new age un pirmgreeku.WMA</a></div><div class="row"><a href="https://drive.google.com/file/d/0B9hGjsAENO79QU1saHNWSUtlSjQ/view?usp=drivesdk">Komūnija :Uzbūvēt Katedrāli Kristietības Skola 22.10.2014</a></div><div class="row"><a href="https://drive.google.com/file/d/0B9hGjsAENO79TExhY3pXc2pmRGc/view?usp=drivesdk">MEKtiksanasIVMajokliAvilasTereze.wma</a></div><div class="row"><a href="https://drive.google.com/file/d/0B9hGjsAENO79S1ZQS1FjbnFhYlU/view?usp=drivesdk">KristietskolaEsticumesticamIevads.WMA</a></div></div>
+  
+</div>
  
   <footer class="page-footer brown">
     <div class="container">
@@ -113,7 +115,12 @@
   <script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
   <script src="js/materialize.js"></script>
   <script src="js/init.js"></script>
-
+  <script>
+    $(document).ready(function(){
+    $('.tabs-wrapper .row').pushpin({ top: $('.tabs-wrapper').offset().top });
+  });
+  
+  </script>
   </body>
 </html>
 
