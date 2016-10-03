@@ -88,16 +88,24 @@
 
         </div>
 
-        <div class="col l3 s12">
+        <div class="col l3 s12">  
           <h5 class="white-text">Kontakti</h5>
           <ul>
             <li><a class="white-text" href="mailto:info@kek.lv" target="_blank"><i class="material-icons left">email</i>info@kek.lv</a></li>
           </ul>
-        </div>
-                <div class="col l3 s12">
-          <h5 class="white-text">Links</h5>
-              <a href="#" id="subscribe-link" class="btn waves-effect" style="display: none;">Subscribe to Notifications</a>
+          <h5 class="white-text">Izziņas</h5>
           <ul>
+          <li><a href="#" id="subscribe-link" class="btn-flat waves-effect" style="display: none;"><i class="material-icons left">notifications_active</i>notifications</a></li>
+          <li class="input-field">
+          <i class="material-icons prefix">email</i>
+          <input placeholder="Placeholder" id="first_name" type="text" class="validate">
+          <label for="first_name">vards.uzvards@mail.lv</label>          
+          </li>
+          </ul>
+        </div>
+        <div class="col l3 s12">
+          <h5 class="white-text">Links</h5>
+         <ul>
           <li><a href="0B2RmV5Z0PCsTZTNXN3o3cmlGc0E.html">Jaunumi</a></li><li><a href="0B2RmV5Z0PCsTZW5jZ0pnY2NyYlk.html">Karmels</a></li><li><a href="0B2RmV5Z0PCsTR1hfMzZTcnlRTzQ.html">Par KEK</a></li><li><a href="0B2RmV5Z0PCsTQzZKaURXS2FYVW8.html">Jaunieši</a></li><li><a href="0B9hGjsAENO79LUsxYW1FWE0wSTg.html">Arhivs</a></li><li><a href="0B2RmV5Z0PCsTbDNGSnQxNmMwekU.html">KEK dzīve</a></li>
           </ul>
         </div>
@@ -119,10 +127,10 @@
     var OneSignal = window.OneSignal || [];
     OneSignal.push(["init", {
       appId: "65cd50f9-a84b-45db-ac29-102938767a73",
-      autoRegister: true,  
+      autoRegister: false,  
       subdomainName: 'keklv',   
       notifyButton: {
-          enable: true  
+          enable: false  
       }
     }]);
   </script>
