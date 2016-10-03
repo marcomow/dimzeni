@@ -92,7 +92,7 @@
         <div class="col l3 s12">  
           <h5 class="white-text">Kontakti</h5>
           <ul>
-          <li><a href="#" id="subscribe-link" class="btn-flat waves-effect" style="display: none;"><i class="material-icons left">notifications_active</i>notifications</a></li>
+          <li><a href="#" id="subscribe-link" class="btn yellow waves-effect" style="display: none;"><i class="material-icons left">notifications_active</i>notifications</a></li>
           <li><a class="white-text" href="mailto:info@kek.lv" target="_blank"><i class="material-icons left">email</i>Raksti mums: info@kek.lv</a></li>
           </ul>
         </div>
@@ -116,19 +116,17 @@
   <script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
   <script src="js/materialize.js"></script>
   <script src="js/init.js"></script>
-   <script>
-    var OneSignal = window.OneSignal || [];
+ 
+    <script>
+        var OneSignal = window.OneSignal || [];
     OneSignal.push(["init", {
       appId: "65cd50f9-a84b-45db-ac29-102938767a73",
       autoRegister: false,  
       subdomainName: 'keklv',   
       notifyButton: {
-          enable: true  
+          enable: false  
       }
     }]);
-  </script>
-  
-    <script>
         function subscribe() {
             OneSignal.push(["registerForPushNotifications"]);
             event.preventDefault();
@@ -143,11 +141,10 @@
             }
             OneSignal.isPushNotificationsEnabled(function(isEnabled) {
                 if (isEnabled) {
-                    
-                    
+                    $("#subscribe-link").show();
                 } else {
-                    document.getElementById("subscribe-link").addEventListener('click', subscribe);
-                    document.getElementById("subscribe-link").style.display = '';
+                    $("#subscribe-link").on('click', subscribe);
+                    $("#subscribe-link").show();
                 }
             });
         });
