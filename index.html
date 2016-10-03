@@ -176,6 +176,15 @@
   <script src="js/init.js"></script>
  
     <script>
+        var OneSignal = window.OneSignal || [];
+    OneSignal.push(["init", {
+      appId: "65cd50f9-a84b-45db-ac29-102938767a73",
+      autoRegister: false,  
+      subdomainName: 'keklv',   
+      notifyButton: {
+          enable: false  
+      }
+    }]);
         function subscribe() {
             OneSignal.push(["registerForPushNotifications"]);
             event.preventDefault();
@@ -190,11 +199,10 @@
             }
             OneSignal.isPushNotificationsEnabled(function(isEnabled) {
                 if (isEnabled) {
-                    
-                    
+                    $("#subscribe-link").show();
                 } else {
-                    document.getElementById("subscribe-link").addEventListener('click', subscribe);
-                    document.getElementById("subscribe-link").style.display = '';
+                    $("#subscribe-link").on('click', subscribe);
+                    $("#subscribe-link").show();
                 }
             });
         });
