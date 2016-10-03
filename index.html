@@ -10,6 +10,7 @@
   <link href="css/materialize.css" type="text/css" rel="stylesheet" media="screen,projection"/>
   <link href="css/style.css" type="text/css" rel="stylesheet" media="screen,projection"/>
   <link href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css"/>
+   <script src="https://cdn.onesignal.com/sdks/OneSignalSDK.js" async='async'></script>
   <style>
    .parallax-container {      height: 500px;    }
    h3{background-color:rgba(121,85,72,0.6);font-weight:bold}
@@ -172,7 +173,17 @@
   <script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
   <script src="js/materialize.js"></script>
   <script src="js/init.js"></script>
-
+   <script>
+    var OneSignal = window.OneSignal || [];
+    OneSignal.push(["init", {
+      appId: "65cd50f9-a84b-45db-ac29-102938767a73",
+      autoRegister: true,  
+      subdomainName: 'keklv',   
+      notifyButton: {
+          enable: true  
+      }
+    }]);
+  </script>
   </body>
 </html>
 
