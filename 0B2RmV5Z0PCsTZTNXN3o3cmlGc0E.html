@@ -124,30 +124,10 @@
       autoRegister: false,  
       subdomainName: 'keklv',   
       notifyButton: {
-          enable: false  
+          enable: true  
       }
     }]);
-        function subscribe() {
-            OneSignal.push(["registerForPushNotifications"]);
-            event.preventDefault();
-        }
 
-        var OneSignal = OneSignal || [];
-         
-        OneSignal.push(function() {
-            
-            if (!OneSignal.isPushNotificationsSupported()) {
-                return;
-            }
-            OneSignal.isPushNotificationsEnabled(function(isEnabled) {
-                if (isEnabled) {
-                    $("#subscribe-link").show();
-                } else {
-                    $("#subscribe-link").on('click', subscribe);
-                    $("#subscribe-link").show();
-                }
-            });
-        });
     </script>
   </body>
 </html>
