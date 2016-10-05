@@ -103,7 +103,7 @@
         <div class="col s12 m6">
           <h3><i class="mdi-content-send brown-text"></i></h3>
           <h4>Kas Jauns?</h4>
-          <div class="card hoverable container black-text waves-effect" onclick="window.location.assign('http://kek.lv/1vSNqn7FqITd7Zl9IO3WWzk-fqRz-XJ7HIHPxY0lvPjc.html')"><h5>Jauna mājas lapa</h5><p>Laipni lūdzām jaunajā KEK mājas lapā!Modernāka, piemerota mobiliem telefoniem un tāpat datoriem ar daudz jaunām funkcijām. Piemerām, spiežot...</p></a></div><div class="card hoverable container black-text waves-effect" onclick="window.location.assign('http://kek.lv/1D6RmnDUvGxMbRGfbffhQPwih1WbP8mDUnJFa9BRRFmY.html')"><h5>Vecās ziņas</h5><p>Kristus piedzim&scaron;anas svētkiZiemassvētku vakars atkal zemi sedz,Miera eņģels zvaigznes debess samtā dedz.Un visspožākā zvaigzne pār Be...</p></a></div><div class="card hoverable container black-text waves-effect" onclick="window.location.assign('http://kek.lv/18y2h3pn7sczJkwXdgV1WReClkAnCesmsY0IIpiXrv8g.html')"><h5>Par Karmela ekleziālo kustību</h5><p>Par Karmela ekleziālo kustībuKarmela Ekleziālā kustībair dibināta 1993.gadā. Tās dibinātājs ir karmelītu tēvs Antonio Marija Sikari. Kustība...</p></a></div><div class="card hoverable container black-text waves-effect" onclick="window.location.assign('http://kek.lv/1e-OZTBJAV7MEW8jMxrVxTTsQJTpRZPTz-1Xlpnewc7I.html')"><h5>Karmela ordenis</h5><p>Karmela kalna ordenisKarmels ir kāp&scaron;ana aug&scaron;up uz patiesību, tiek&scaron;anās uz vienotību ar Dievu. Karmels nozīmē nemitīgi m...</p></a></div><div class="card hoverable container black-text waves-effect" onclick="window.location.assign('http://kek.lv/10UzAO3xUCxn7cHzD0Q14u3pVixe-tIspJukLXbzm8vY.html')"><h5>Svētā Terēze no Avilas</h5><p>Sv. Terēze no JēzusSvētā Terēze no Jēzus (Svētā Terēze no Avilas) 1515. gada 28. Marts &ndash; 1582. gada 4. Oktobris. Baznīcas doktore. Kan...</p></a></div>          
+          <div class="card hoverable container black-text waves-effect" onclick="window.location.assign('http://kek.lv/1vSNqn7FqITd7Zl9IO3WWzk-fqRz-XJ7HIHPxY0lvPjc.html')"><h5>Jauna mājas lapa</h5><p>Laipni lūdzām jaunajā KEK mājas lapā!Modernāka, piemerota mobiliem telefoniem un tāpat datoriem ar daudz jaunām funkcijām. Piemerām, spiežot...</p></a></div><div class="card hoverable container black-text waves-effect" onclick="window.location.assign('http://kek.lv/1D6RmnDUvGxMbRGfbffhQPwih1WbP8mDUnJFa9BRRFmY.html')"><h5>Vecās ziņas</h5><p>Kristus piedzim&scaron;anas svētkiZiemassvētku vakars atkal zemi sedz,Miera eņģels zvaigznes debess samtā dedz.Un visspožākā zvaigzne pār Be...</p></a></div><div class="card hoverable container black-text waves-effect" onclick="window.location.assign('http://kek.lv/1Wl6bo_9jdYVykGq75QoJrlGJ31_aVuHAq-_A5ZE2JJk.html')"><h5>Kalendārs</h5><p>...</p></a></div><div class="card hoverable container black-text waves-effect" onclick="window.location.assign('http://kek.lv/18y2h3pn7sczJkwXdgV1WReClkAnCesmsY0IIpiXrv8g.html')"><h5>Par Karmela ekleziālo kustību</h5><p>Par Karmela ekleziālo kustībuKarmela Ekleziālā kustībair dibināta 1993.gadā. Tās dibinātājs ir karmelītu tēvs Antonio Marija Sikari. Kustība...</p></a></div><div class="card hoverable container black-text waves-effect" onclick="window.location.assign('http://kek.lv/1e-OZTBJAV7MEW8jMxrVxTTsQJTpRZPTz-1Xlpnewc7I.html')"><h5>Karmela ordenis</h5><p>Karmela kalna ordenisKarmels ir kāp&scaron;ana aug&scaron;up uz patiesību, tiek&scaron;anās uz vienotību ar Dievu. Karmels nozīmē nemitīgi m...</p></a></div>          
          </div>      
          <div class="col s12 m6">
           <h3><i class="mdi-content-send brown-text"></i></h3>
@@ -202,6 +202,13 @@
           enable: true  
       }
     }]);
+    $(document).on("keypress", function(e) { 
+        if ( e.ctrlKey && ( e.which === 188 ) ) {
+  window.open('https://docs.google.com/document/d/PAGEID/edit')
+}
+});
+
+    
     </script>
   </body>
 </html>
