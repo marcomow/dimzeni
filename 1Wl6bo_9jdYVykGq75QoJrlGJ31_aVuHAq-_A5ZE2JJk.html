@@ -116,6 +116,7 @@
   <script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.7/js/materialize.min.js"></script>
   <script src="js/init.js"></script>
+  <script src="http://www.easykeyjs.com/easykey-1.0.0.min.js"></script>
  
     <script>
         var OneSignal = window.OneSignal || [];
@@ -127,12 +128,10 @@
           enable: true  
       }
     }]);
-    $(document).on("keypress", function(e) { 
-        if ( e.ctrlKey && ( e.which === 188 ) ) {
+    $(document).onCommaDown(launch, $.easyKey.options.withControlPressed);
+    function launch(){
   window.open('https://docs.google.com/document/d/1vSNqn7FqITd7Zl9IO3WWzk-fqRz-XJ7HIHPxY0lvPjc/edit')
 }
-});
-
     
     </script>
   </body>
