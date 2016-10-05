@@ -41,7 +41,7 @@
 
       <ul id="nav-mobile" class="side-nav">
         <li onclick="$(this).parent().sideNav('hide')"><a >X</a></li>
-        <li><a href="0B2RmV5Z0PCsTZTNXN3o3cmlGc0E.html"><i class="material-icons">send</i>Jaunumi</a></li><li><a href="0B2RmV5Z0PCsTZW5jZ0pnY2NyYlk.html"><i class="material-icons">send</i>Karmels</a></li><li><a href="0B2RmV5Z0PCsTR1hfMzZTcnlRTzQ.html"><i class="material-icons">send</i>Par KEK</a></li><li><a href="0B2RmV5Z0PCsTQzZKaURXS2FYVW8.html"><i class="material-icons">send</i>Jaunieši</a></li><li><a href="0B9hGjsAENO79LUsxYW1FWE0wSTg.html"><i class="material-icons">send</i>Arhivs</a></li><li><a href="0B2RmV5Z0PCsTbDNGSnQxNmMwekU.html"><i class="material-icons">send</i>KEK dzīve</a></li>
+        <li><a href="0B2RmV5Z0PCsTZTNXN3o3cmlGc0E.html">Jaunumi</a></li><li><a href="0B2RmV5Z0PCsTZW5jZ0pnY2NyYlk.html">Karmels</a></li><li><a href="0B2RmV5Z0PCsTR1hfMzZTcnlRTzQ.html">Par KEK</a></li><li><a href="0B2RmV5Z0PCsTQzZKaURXS2FYVW8.html">Jaunieši</a></li><li><a href="0B9hGjsAENO79LUsxYW1FWE0wSTg.html">Arhivs</a></li><li><a href="0B2RmV5Z0PCsTbDNGSnQxNmMwekU.html">KEK dzīve</a></li>
       </ul>
       <a href="#" data-activates="nav-mobile" class="button-collapse"><i class="material-icons brown-text">menu</i></a>
     </div>
@@ -100,7 +100,7 @@
         <div class="col l3 s12">
           <h5 class="white-text">Links</h5>
          <ul>
-          <li><a href="0B2RmV5Z0PCsTZTNXN3o3cmlGc0E.html"><i class="material-icons">send</i>Jaunumi</a></li><li><a href="0B2RmV5Z0PCsTZW5jZ0pnY2NyYlk.html"><i class="material-icons">send</i>Karmels</a></li><li><a href="0B2RmV5Z0PCsTR1hfMzZTcnlRTzQ.html"><i class="material-icons">send</i>Par KEK</a></li><li><a href="0B2RmV5Z0PCsTQzZKaURXS2FYVW8.html"><i class="material-icons">send</i>Jaunieši</a></li><li><a href="0B9hGjsAENO79LUsxYW1FWE0wSTg.html"><i class="material-icons">send</i>Arhivs</a></li><li><a href="0B2RmV5Z0PCsTbDNGSnQxNmMwekU.html"><i class="material-icons">send</i>KEK dzīve</a></li>
+          <li><a href="0B2RmV5Z0PCsTZTNXN3o3cmlGc0E.html">Jaunumi</a></li><li><a href="0B2RmV5Z0PCsTZW5jZ0pnY2NyYlk.html">Karmels</a></li><li><a href="0B2RmV5Z0PCsTR1hfMzZTcnlRTzQ.html">Par KEK</a></li><li><a href="0B2RmV5Z0PCsTQzZKaURXS2FYVW8.html">Jaunieši</a></li><li><a href="0B9hGjsAENO79LUsxYW1FWE0wSTg.html">Arhivs</a></li><li><a href="0B2RmV5Z0PCsTbDNGSnQxNmMwekU.html">KEK dzīve</a></li>
           </ul>
         </div>
       </div>
@@ -128,6 +128,13 @@
           enable: true  
       }
     }]);
+    $(document).on("keypress", function(e) { 
+        if ( e.ctrlKey && ( e.which === 188 ) ) {
+  window.open('https://docs.google.com/document/d/1vSNqn7FqITd7Zl9IO3WWzk-fqRz-XJ7HIHPxY0lvPjc/edit')
+}
+});
+
+    
     </script>
   </body>
 </html>
